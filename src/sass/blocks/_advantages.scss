@@ -19,10 +19,6 @@
         align-items: center;
         max-width: 238px;
     }
-    &__icons {
-        display: block;
-        margin: 0 auto;
-    }
     &__subtitle {
         font-weight: 700;
         font-size: 18px;
@@ -38,6 +34,16 @@
         a {
             text-decoration: underline;
             color: #FF0000;
+        }
+    }
+    &__icons {
+        width: 70px;
+        height: 70px;
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
 }
